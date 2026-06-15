@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginPage.css">
+</head>
+<body>
+    <div class = "form">
+        <div id = "loginForm">
+            <h2>Login</h2>
+            <label>Email id:</label><input type="email" id="loginEmail" placeholder="example@gmail.com">
+            <label>Password: </label><input type="password" id="loginPassword" placeholder="Enter your password...">
+            <button onclick = "login()">Login</button>
+            <p>
+                Don't have an account ?
+                <span onclick="showSignUp()">Sign Up</span>
+            </p>
+        </div>
+        <div id = "signUpForm" class = "hidden">
+            <h2>Sign Up</h2>
+            <labbel>Name: </labbel><input type="text" id="signupName" placeholder="Enter your name...">
+            <label>Phone No: </label><input type="tel" id="signupNumber" placeholder="Enter your number...">
+            <label>Email address: </label><input type="email" id="signupEmail" placeholder="example@gmail.com">
+            <label>Password: </label><input type="password" id="signupPassword" placeholder="Enter the password...">
+            <button onclick = "signup()">Sign Up</button>
+            <p>
+                Already have an account ?
+                <span onclick="showLogin()">Login</span>
+            </p>
+        </div>
+    </div>
+    <script src="loginPage.js"></script>
+</body>
+</html>

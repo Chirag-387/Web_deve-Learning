@@ -1,0 +1,223 @@
+.menu_bar{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_side{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+    height : 50px;
+}
+.right_side{
+    display: flex;
+    width: 450px;
+    justify-content: end;
+    margin-right: 10px;
+    align-items: center;
+}
+.right_side ul{
+    display: flex;
+}
+.right_side ul li{
+    display: flex;
+    padding: 10px;
+}
+.right_side ul li a{
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 20px;
+    margin-top: 100px;
+}
+.main .heading_line{
+    margin-top: 100px;
+    margin-left: 0px;
+    color:#25343F;
+}
+.main .heading_line p{
+    margin-right: 90px;
+    color:#25343F;
+}
+.main button{
+    background-color: #FF9B51;
+    color:#25343F;
+    border: 0px;
+    width: 110px;
+    height: 50px;
+    border-radius: 70px;
+    margin-right: 25px;
+}
+.main button:hover{
+    background-color: #BFC9D1;
+}
+.main button a{
+    text-decoration: none;
+}
+.main button a:hover{
+    color: #FF9B51;
+}
+.main2{
+    display: flex;
+    background-color:#BFC9D1;
+    margin-top: 100px;
+}
+.main2 .container_left{
+    display: flex;
+    width: 550px;
+    height: auto;
+    margin-left: 100px;
+}
+.main2 .container_left .row1 .column1, .main2 .container_left .row1 .column2, .main2 .container_left .row2 .column1, .main2 .container_left .row2 .column2{
+    width: 300px;
+    height: 150px;
+}
+.main2 .container_right{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: auto;
+    margin-left: 300px;
+}
+.main2 .container_right .bottom{
+    margin-top: 60px;
+}
+.main2 .container_right .bottom button{
+    border: 0px;
+    background-color:#FF9B51;
+    color:#25343F;
+    width: 190px;
+    height: 65px;
+    border-radius: 70px;
+}
+.footer{
+    /* display: flex; */
+    justify-content: space-evenly;
+}
+.footer1{
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+.footer1 .other, .footer1 .contact, .footer1 .discover, .footer1 .useful_links, .footer1 .support{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-top: 100px;
+    color: #25343F;
+}
+.footer1 .other a, .footer1 .contact a, .footer1 .discover a, .footer1 .useful_links a, .footer1 .support a{
+    text-decoration: none;
+}
+.footer2{
+    margin-top: 100px;
+    background-color:#BFC9D1;
+    display: flex;
+}
+.footer2 .left_side, .footer2 .right_side{
+    display: flex;
+}
+.footer2 .left_side a, .footer2 .right_side a{
+    text-decoration: none;
+}
+.footer2 .left_side{
+    margin-left: 150px;
+    width: 300px;
+    color: #25343F;
+    font-weight: bold;
+}
+.footer2 .right_side{
+    margin-left: 350px;
+}
+.footer2 .left_side a{
+    margin-left: 10px;
+}
+.main3{
+    display: grid;
+    background-color:#BFC9D1;
+    /* margin-bottom: 100px; */
+}
+.main3 .row1{
+    margin-top: 50px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+}
+.main3 .row2{
+    margin-left: 100px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 100px;
+}
+.main3 img{
+    width: 400px;
+    height: auto;
+    align-items: center;
+}
+.main3 .row1 .col1, .col2, .col3{
+    width: 400px;
+}
+.main3 .row2 .col1, .col2, .col3{
+    width: 400px;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Box */
+.popup-content {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.popup-content button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FF9B51;
+    color: #25343F;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}

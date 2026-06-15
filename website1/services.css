@@ -1,0 +1,92 @@
+.menu_bar{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_side{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+    height : 50px;
+}
+.right_side{
+    display: flex;
+    width: 450px;
+    justify-content: end;
+    margin-right: 10px;
+    align-items: center;
+}
+.right_side ul{
+    display: flex;
+}
+.right_side ul li{
+    display: flex;
+    padding: 10px;
+}
+.right_side ul li a{
+    text-decoration: none;
+}
+
+.main .upper {
+    display: flex;
+    flex-direction: column;
+    width : 700px;
+    align-items: center;
+    margin-left: 400px;
+}
+
+.main .upper h1 {
+    margin-bottom: 1px;
+}
+
+.main .upper p {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1px;
+}
+
+.main .middle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .middle .card1 #heading, .main .middle .card1 #info, .main .middle .card2 #heading, .main .middle .card2 #info {
+    display: flex;
+}
+
+.main .middle .card1 {
+    background-color: aqua;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 600px;
+    height: 200px; 
+}
+
+.main .middle .card2 {
+    background-color: pink;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 600px;
+    height: 200px; 
+}
+
+.main .middle .card1 #heading, .main .middle .card2 #heading {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 1px;;
+}
+
+.main .middle .card1 #info, .main .middle .card2 #info {
+    width: 400px;
+    padding: 10px;
+    margin-top: 1px;
+}
