@@ -39,6 +39,7 @@
     width : 700px;
     align-items: center;
     margin-left: 400px;
+    margin-top: 50px;
 }
 
 .main .upper h1 {
@@ -64,19 +65,21 @@
 }
 
 .main .middle .card1 {
-    background-color: aqua;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    background-color: #BFC9D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 600px;
     height: 200px; 
+    border-radius: 50px;
 }
 
 .main .middle .card2 {
-    background-color: pink;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    background-color: #BFC9D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 600px;
-    height: 200px; 
+    height: 200px;
+    border-radius: 50px;
 }
 
 .main .middle .card1 #heading, .main .middle .card2 #heading {
@@ -90,3 +93,39 @@
     padding: 10px;
     margin-top: 1px;
 }
+
+.main .middle .card1 #link, .main .middle .card2 #link {
+    margin-left: 490px;
+}
+
+p {
+    color: #FF9B51;
+}
+
+h1, h2 {
+    color: #25343F;
+}
+
+.card1_image img, .card2_image img {
+    width: 600px;
+    height: 210px;
+    border-radius: 50px;
+}
+
+.card1_full, .card2_full {
+    display: flex;
+    flex-direction: row;
+}
+
+.card1_full .card1_image {
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.card2_full .card2_image {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+
