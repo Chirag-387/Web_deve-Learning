@@ -1,9 +1,11 @@
 .menu_bar{
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
-    height: 55px;
+    height: 65px;
     flex: 1;
     justify-content: space-between;
+    align-items: center;
 }
 .left_side{
     width: 300px;
@@ -30,10 +32,14 @@
 .right_side ul li a{
     text-decoration: none;
 }
-.headline{
-    text-align: center;
-    margin-top: 60px;
+.menu_bar .right_side #login {
+    background-color: #FF9B51;
     color: #25343F;
+    width: 60px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
 }
 .main{
     display: flex;

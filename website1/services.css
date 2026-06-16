@@ -32,6 +32,15 @@
 .right_side ul li a{
     text-decoration: none;
 }
+.menu_bar .right_side #login {
+    background-color: #FF9B51;
+    color: #25343F;
+    width: 60px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+}
 
 .main .upper {
     display: flex;
