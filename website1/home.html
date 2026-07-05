@@ -167,8 +167,8 @@
 
         <h2>Get a Quote</h2>
 
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Your Name" id = "inputName">
+        <input type="email" placeholder="Your Email" id = "inputEmail">
         
        <label for="services">Choose a service:</label>
   <select name="services" id="services">
@@ -183,17 +183,31 @@
 </div>
 </body>
 <script>
-function openPopup() {
-document.getElementById("popupForm").classList.remove("hidden");
-}
+    function openPopup() {
+    document.getElementById("popupForm").classList.remove("hidden");
+    }
 
-function closePopup() {
-    document.getElementById("popupForm").classList.add("hidden");
-}
+    function closePopup() {
+        document.getElementById("popupForm").classList.add("hidden");
+    }
 
-function submitForm() {
-    alert("Your request has been submitted!");
-    closePopup();
-}
+    function submitForm() {
+        const inputName = document.getElementById("inputName").value;
+        const inputEmail = document.getElementById("inputEmail").value;
+
+        if(inputName === "") {
+            window.alert("Name is not entered, Enter your name!");
+        }
+        else if(inputEmail === "") {
+            window.alert("Email is not entered, Enter your email!")
+        }
+        else if(!(inputEmail.includes('@'))) {
+            window.alert("Email entered is INVALID.")
+        }
+        else {
+            alert("Your request has been submitted!");
+            closePopup();
+        }
+    }
 </script>
 </html>
