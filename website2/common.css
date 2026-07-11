@@ -1,0 +1,49 @@
+body {
+    background-color: #FBF3E7;
+}
+
+
+/* nav bar */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #F3E4CC;
+    font-family: 'Franklin Gothic Medium';
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.menu .leftSection {
+    width: 200px;
+    text-align: center;
+    color: #3B2A1E;
+    font-size: 20px;
+}
+
+.menu .rightSection {
+    display: flex;
+    justify-content: end;
+    margin-left: 900px;
+}
+
+.menu .rightSection ul {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    padding: 10px;
+    align-items: center;
+}
+
+.menu .rightSection ul li {
+    display: flex;
+    margin-left: 20px;
+}
+
+.menu .rightSection ul li a {
+    text-decoration: none;
+    color: #3B2A1E;
+}
+
