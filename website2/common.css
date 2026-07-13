@@ -1,5 +1,6 @@
 body {
     background-color: #FBF3E7;
+    font-family: 'Franklin Gothic Medium';
 }
 
 
@@ -7,17 +8,16 @@ body {
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 1%;
     background-color: #F3E4CC;
-    font-family: 'Franklin Gothic Medium';
     border-radius: 100px;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 .menu .leftSection {
-    width: 200px;
+    width: 20%;
     text-align: center;
     color: #3B2A1E;
     font-size: 20px;
@@ -25,15 +25,12 @@ body {
 
 .menu .rightSection {
     display: flex;
-    justify-content: end;
-    margin-left: 900px;
+    width: 20%;
 }
 
 .menu .rightSection ul {
     display: flex;
     flex-direction: row;
-    width: 350px;
-    padding: 10px;
     align-items: center;
 }
 
