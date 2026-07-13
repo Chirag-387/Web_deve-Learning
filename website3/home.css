@@ -6,6 +6,7 @@ body {
     top: 0;
     position: sticky;
     padding: 40px;
+    background-color: #ffffff;
 }
 
 .menu {
@@ -51,7 +52,6 @@ body {
     height: 40px;
     border: 1px solid;
     border-radius: 20px;
-    animation: buttonBorder 10s infinite;
     cursor: pointer;
 
     transition: background-color 2s ease, color 1.5s ease;
@@ -62,23 +62,7 @@ body {
     color: #1E3A8A;
 }
 
-@keyframes buttonBorder {
-    0% {
-       border-color: #F3F4F6; 
-    }
-    25% {
-        border-color: #1E3A8A;
-    }
-    50% {
-        border-color: #1F2937;
-    }
-    75% {
-        border-color: #F3F4F6;
-    }
-    100% {
-        border-color: #1E3A8A;
-    }
-}
+
 
 .hero {
     padding: 80px 20px;
@@ -274,7 +258,7 @@ h1 {
     font-size: 40px;
     color: #1F2937;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 60px;
 }
 
 .steps {
@@ -293,7 +277,8 @@ h1 {
         align-items: center;
         justify-content: center;
         font-weight: bold;
-        margin: 0 auto 20px;  
+        margin: 0 auto 20px;
+        border-radius: 50%;
 }
 
 .step1 h3, .step2 h3, .step3 h3 {
@@ -308,4 +293,128 @@ h1 {
     color: #555555;
     font-size: 16px;
     line-height: 1.5;
+}
+
+.ctaSection {
+    background-color: #1E3A8A;
+    padding: 80px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ctaSection h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ctaSection p {
+    color: #E5E7EB;
+}
+
+.ctaButton {
+    color: #1E3A8A;
+    background-color: #ffffff;
+    width: 150px;
+    height: 60px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid #1E3A8A;
+
+    transition: background-color 1.5s ease, color 1.5s ease;
+}
+
+
+.ctaButton:hover {
+    background-color: #1E3A8A;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.footer {
+    
+    background-color: #1F2937;
+    max-width: 1300px;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin: 80px;
+    border-radius: 50px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+.upper .lSection {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.upper .lSection .top, .upper .lSection .bottom {
+    text-align: start;
+}
+
+.upper .lSection .top h2 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.upper .lSection .top p {
+    color: #E5E7EB;
+}
+
+.upper .lSection .bottom {
+    margin-top: 60px;
+    color: #E5E7EB;
+}
+
+.upper .lSection .bottom .links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.upper .rSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.upper .rSection .col1, .upper .rSection .col2, .upper .rSection .col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 130px;
+}
+
+.upper .rSection .col1 a, .upper .rSection .col2 a, .upper .rSection .col3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.upper .rSection .col1 h3, .upper .rSection .col2 h3, .upper .rSection .col3 h3 {
+    color: #E5E7EB;
+}
+
+.footer .lower .hr {
+        border: none;
+        height: 2px;
+        background-color: #555555;
+}
+
+.footer .lower {
+    padding: 20px 20px;
+    color: #555555;
+}
+
+.footer .lSection .bottom .links {
+    color : #ffffff;
 }
