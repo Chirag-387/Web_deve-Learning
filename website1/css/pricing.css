@@ -1,0 +1,274 @@
+body {
+    background-color: #F3F4F6;
+    font-family: 'Inter', 'sans-serif';
+}
+
+.header {
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    padding: 40px;
+    background-color: #F3F4F6;
+}
+
+.menu {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid #1E3A8A;
+    border-radius: 100px;
+}
+
+.menu #lSection img {
+    width: 150px;
+    height: auto;
+    max-width: 150px;
+}
+
+.menu #mSection ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu #mSection ul li a {
+    text-decoration: none;
+    color: #1F2937;
+    transition: color 2s ease;
+}
+
+.menu #mSection ul li a:hover {
+    color: #1E3A8A;
+}
+
+#logIn {
+    margin-right: 20px;
+    background-color: #1E3A8A;
+    color: #ffffff;
+    max-width: 75px;
+    width: 75px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: background-color 2s ease, color 1.5s ease;
+}
+
+#logIn:hover {
+    background-color: #ffffff;
+    color: #1E3A8A;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .upper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    text-align: center;
+}
+
+.main .lower {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.pricingCards {
+    /* margin-top: 0px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto 20px;
+    padding: 16px;
+    gap: 40px;
+}
+
+.pricingCards .pricingCard1, .pricingCards .pricingCard2, .pricingCards .pricingCard3 {
+    color: #555555;
+    background-color: #ffffff;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    transition: transform 1s ease, border 1s ease;
+}
+
+.pricingCards .pricingCard1:hover, .pricingCards .pricingCard2:hover, .pricingCards .pricingCard3:hover {
+    transform: translateY(-10px);
+    border-color: rgb(30, 58, 138);
+    box-shadow: 5px 5px 15px 2px rgba(30, 58, 138, 0.3);
+}
+
+.pricingCards .pricingCard1 .intro, .pricingCards .pricingCard2 .intro, .pricingCards .pricingCard3 .intro {    
+    text-align: center;
+}
+
+.pricingCards .pricingCard1 .price, .pricingCards .pricingCard2 .price, .pricingCards .pricingCard3 .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricingCards .pricingCard1 .points .point1 , .pricingCards .pricingCard1 .points .point2, .pricingCards .pricingCard1 .points .point3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: strat;
+    margin-left: 20px;
+    align-items: center;
+    gap: 16px;
+}
+
+.pricingCards .pricingCard2 .points .point1 , .pricingCards .pricingCard2 .points .point2, .pricingCards .pricingCard2 .points .point3, .pricingCards .pricingCard2 .points .point4  {
+    display: flex;
+    flex-direction: row;
+    justify-content: strat;
+    margin-left: 20px;
+    align-items: center;
+    gap: 16px;
+}
+
+.pricingCards .pricingCard3 .points .point1 , .pricingCards .pricingCard3 .points .point2, .pricingCards .pricingCard3 .points .point3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: strat;
+    margin-left: 20px;
+    align-items: center;
+    gap: 16px;
+}
+
+.pricingCard1 .priceButton, .pricingCard2 .priceButton, .pricingCard3 .priceButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pricingCard1 .priceButton button, .pricingCard2 .priceButton button, .pricingCard3 .priceButton button {
+    width: 150px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #1E3A8A;
+    color: #1E3A8A;
+    border-radius: 40px;
+    transition: background-color 1s ease, color 1s ease;
+    cursor: pointer;
+}
+
+.pricingCard1 .priceButton button:hover, .pricingCard2 .priceButton button:hover, .pricingCard3 .priceButton button:hover {
+    background-color: #1E3A8A;
+    color: #ffffff;
+}
+
+.pricingCard2 .popular {
+    display: flex;
+    width: 100px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1E3A8A;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.footer {
+    
+    background-color: #1F2937;
+    max-width: 1300px;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin: 80px;
+    border-radius: 50px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+.upper .lSection {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.upper .lSection .top, .upper .lSection .bottom {
+    text-align: start;
+}
+
+.upper .lSection .top h2 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.upper .lSection .top p {
+    color: #E5E7EB;
+}
+
+.upper .lSection .bottom {
+    margin-top: 60px;
+    color: #E5E7EB;
+}
+
+.upper .lSection .bottom .links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.upper .rSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.upper .rSection .col1, .upper .rSection .col2, .upper .rSection .col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 130px;
+}
+
+.upper .rSection .col1 a, .upper .rSection .col2 a, .upper .rSection .col3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.upper .rSection .col1 h3, .upper .rSection .col2 h3, .upper .rSection .col3 h3 {
+    color: #E5E7EB;
+}
+
+.footer .lower .hr {
+        border: none;
+        height: 2px;
+        background-color: #555555;
+}
+
+.footer .lower {
+    padding: 20px 20px;
+    color: #555555;
+}
+
+.footer .lSection .bottom .links {
+    color : #ffffff;
+}
