@@ -1,0 +1,117 @@
+body {
+    background-color: #F3F4F6;
+    font-family: 'Inter', 'sans-serif';
+}
+
+.header {
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    padding: 40px;
+    background-color: #F3F4F6;
+}
+
+.menu {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid #1E3A8A;
+    border-radius: 100px;
+}
+
+.menu #lSection img {
+    width: 150px;
+    height: auto;
+    max-width: 150px;
+}
+
+.menu #mSection ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu #mSection ul li a {
+    text-decoration: none;
+    color: #1F2937;
+    transition: color 2s ease;
+}
+
+.menu #mSection ul li a:hover {
+    color: #1E3A8A;
+}
+
+#logIn {
+    margin-right: 20px;
+    background-color: #1E3A8A;
+    color: #ffffff;
+    max-width: 75px;
+    width: 75px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: background-color 2s ease, color 1.5s ease;
+}
+
+#logIn:hover {
+    background-color: #ffffff;
+    color: #1E3A8A;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.heroHeaderDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 60px auto;
+}
+
+.section1 .lSide {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.section1 .rSide {
+    display: flex;
+}
+
+.section1 .rSide img{
+    width: 500px;
+}
+
+.lSide .points .point1, .lSide .points .point2, .lSide .points .point3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin: 10px auto;
+}
