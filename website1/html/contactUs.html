@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/6dd324579f.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" href = "../css/contactUs.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,13 +33,13 @@
 
         <div class = "heroHead">
             <div class = "heroEyeBrow">
-                <p>Contact</p>
+                <p style = "color: #1E3A8A; font-weight: bolder">Contact</p>
             </div>
             <div class = "headline">
                 <h1>Let's talk about your project</h1>
             </div>
             <div class = "headlineDesc">
-                <h3>Tell us a bit about what you're building — we'll get back to you within a day.</h3>
+                <h3 style = "color: #555555">Tell us a bit about what you're building — we'll get back to you within a day.</h3>
             </div>
         </div>
 
@@ -49,44 +50,43 @@
                     <input type = "text" id = "name">
                     <label for = "email">Email</label>
                     <input type = "email" id = "email">
-                    <label for = "company">Company</label>
-                    <label for = "company" style = "color: #555555">(optional)</label>
+                    <label for = "company">Company (optional)</label>
                     <input type = "text" id = "company">
                     <label for = "project">Tell us about your project</label>
-                    <input type = "text" id = "project">
-                    <button>Send message</button>
+                    <textarea id="project" name="project" rows="5"></textarea>
+                    <button id = "mySubmit">Send message</button>
                 </form>
             </div>
             <div class = "rSide">
                 <div class = "upper">
                     <div class = "inrtoLine">
-                        <h3>What happens next</h3>
+                        <h3 style = "font-size: x-large">What happens next</h3>
                     </div>
                     <div class = "points">
                         <div class = "point1">
-                            <div class = "lSide">
+                            <div class = "area">
                                 <p>1</p>
+                                <h4>We review your message</h4>
                             </div>
                             <div class = "details">
-                                <h4>We review your message</h4>
                                 <p>Usually within a few hours, always within a day.</p>
                             </div>
                         </div>
                         <div class = "point2">
-                            <div class = "lSide">
+                            <div class = "area">
                                 <p>2</p>
+                                <h4>We book a call</h4>
                             </div>
                             <div class = "details">
-                                <h4>2We book a call</h4>
                                 <p>A short conversation about what your product needs.</p>
                             </div>
                         </div>
                         <div class = "point3">
-                            <div class = "lSide">
+                            <div class = "area">
                                 <p>3</p>
+                                <h4>We put together a plan</h4>
                             </div>
                             <div class = "details">
-                                <h4>We put together a plan</h4>
                                 <p>No obligation to move forward until it's right for you.</p>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                     </div>
                     <div class = "prefer">
                         <p>Prefer email?</p>
-                        <a href = "#">hello@vdera.com</a>
+                        <a href = "#" id = "email">hello@vdera.com</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,47 @@
 
     </div>
 
-    <div class = "footer"></div>
+    <div class = "footer">
+        <div class = "upper">
+            <div class = "lSection">
+                <div class = "top">
+                <h2>VDera</h2>
+                <p>Backend and database engineering for AI and data-driven products.</p>
+                </div>
+                <div class = "bottom">
+                    <h3>Follow</h3>
+                    <div class = "links">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class = "rSection">
+                <div class = "col1">
+                    <h3>Product</h3>
+                    <a href = "#">Features</a>
+                    <a href = "#">Pricing</a>
+                    <a href = "#">How it works</a>
+                </div>
+                <div class = "col2">
+                    <h3>Company</h3>
+                    <a href = "#">About us</a>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Contact</a>
+                </div>
+                <div class = "col3">
+                    <h3>Legal</h3>
+                    <a href = "#">Privacy policy</a>
+                    <a href = "#">Terms of service</a>
+                </div>
+            </div>
+        </div>
+        <div class = "lower">
+            <hr class = "hr"> 
+            <p>&copy; All rights reserved</p>   
+        </div>
+    </div>
 
 </body>
 </html>

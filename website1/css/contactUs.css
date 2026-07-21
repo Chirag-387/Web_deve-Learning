@@ -79,3 +79,206 @@ body {
     text-align: center;
     width: 500px;
 }
+
+.heroMain {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-bottom: 60px;
+}
+
+.heroMain .lSide {
+    background-color: #E5E7EB;
+    width: 400px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 13px;
+    height: 600px;
+    max-height: 600px;
+}
+
+.heroMain .lSide form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.heroMain .lSide form label {
+    margin-top: 30px;
+}
+
+.heroMain .lSide form input {
+    margin-top: 7px;
+    width: 230px;
+    height: 25px;
+    border: 1px solid #555555;
+    border-radius: 10px;
+}
+
+#project {
+    border: 1px solid #555555;
+    width: 230px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+#project {
+    height: 100px;
+}
+
+#mySubmit {
+    margin-top: 40px;
+    border: none;
+    background-color: #1E3A8A;
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+#mySubmit:hover {
+    background-color: #ffffff;
+    color: #1E3A8A;
+}
+
+.heroMain .rSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroMain .rSide .upper {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroMain .rSide .upper .points .point1 .area,
+.heroMain .rSide .upper .points .point2 .area,
+.heroMain .rSide .upper .points .point3 .area {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+
+.heroMain .rSide .upper .points .point1 .area p,
+.heroMain .rSide .upper .points .point2 .area p,
+.heroMain .rSide .upper .points .point3 .area p {
+    display: flex;
+    margin-right: 10px;
+    background-color: #1E3A8A;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    border-radius: 50%;
+}
+
+.heroMain .rSide .upper .points .point1 .details p,
+.heroMain .rSide .upper .points .point2 .details p,
+.heroMain .rSide .upper .points .point3 .details p  {
+    color: #555555;
+}
+
+.heroMain .lower .prefer p {
+    color: #555555;
+}
+
+.heroMain .lower .prefer #email {
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+.footer {
+    
+    background-color: #1F2937;
+    max-width: 1300px;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin: 80px;
+    border-radius: 50px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+.upper .lSection {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.upper .lSection .top, .upper .lSection .bottom {
+    text-align: start;
+}
+
+.upper .lSection .top h2 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.upper .lSection .top p {
+    color: #E5E7EB;
+}
+
+.upper .lSection .bottom {
+    margin-top: 60px;
+    color: #E5E7EB;
+}
+
+.upper .lSection .bottom .links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.upper .rSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.upper .rSection .col1, .upper .rSection .col2, .upper .rSection .col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 130px;
+}
+
+.upper .rSection .col1 a, .upper .rSection .col2 a, .upper .rSection .col3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.upper .rSection .col1 h3, .upper .rSection .col2 h3, .upper .rSection .col3 h3 {
+    color: #E5E7EB;
+}
+
+.footer .lower .hr {
+        border: none;
+        height: 2px;
+        background-color: #555555;
+}
+
+.footer .lower {
+    padding: 20px 20px;
+    color: #555555;
+}
+
+.footer .lSection .bottom .links {
+    color : #ffffff;
+}
